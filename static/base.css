@@ -1,0 +1,431 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css);
+
+@font-face {
+    font-family: Glorify Regular;
+    src: url('../assets/fonts/GlorifyFont/Glorify\ Regular.otf');
+}
+@font-face {
+    font-family: Glorify Medium;
+    src: url('../assets/fonts/GlorifyFont/Glorify\ Medium.otf');
+}
+@font-face {
+    font-family: Glorify SemiBold;
+    src: url('../assets/fonts/GlorifyFont/Glorify\ SemiBold.otf');
+}
+@font-face {
+    font-family: Glorify Bold;
+    src: url('../assets/fonts/GlorifyFont//Glorify\ Bold.otf');
+}
+@font-face {
+    font-family: Human Sans Regular;
+    src: url('../assets/fonts/HumanSansFonts/HumanSans-Regular.otf');
+}
+@font-face {
+    font-family: Human Sans Medium;
+    src: url('../assets/fonts/HumanSansFonts/HumanSans-Medium.otf');
+}
+@font-face {
+    font-family: Human Sans Bold;
+    src: url('../assets/fonts/HumanSansFonts/HumanSans-Bold.otf');
+}
+@font-face {
+    font-family: AdobeHandwriting-Ernie;
+    src: url('../assets/fonts/AdobeHandwriting-Ernie.ttf');
+}
+
+:root{
+    --theme-color:#231f20;
+    --theme-rgb:35, 31, 32;
+    --white:#ffffff;
+    --white-rgb:255, 255, 255;
+    --pink-dark:#d86c93;
+    --pink-dark-rgb:216, 108, 147;
+    --pink-light:#eaadc3;
+    --pink-light-rgb:234, 173, 195;
+    --green-dark:#80c7a6;
+    --green-dark-rgb:128, 199, 166;
+    --green-light:#d0eadc;
+    --green-light-rgb:208, 234, 220;
+    --orange-dark:#e55a3e;
+    --orange-dark-rgb:229, 90, 62;
+    --orange-light:#de6345;
+    --orange-light-rgb:222, 99, 69;
+    --yellow-dark:#fbb044;
+    --yellow-dark-rgb:251, 176, 68;
+    --glorify-regular:Glorify Regular;
+    --glorify-medium:Glorify Medium;
+    --glorify-semibold:Glorify SemiBold;
+    --glorify-bold:Glorify Bold;
+    --human-sans-regular:Human Sans Regular;
+    --human-sans-medium:Human Sans Medium;
+    --human-sans-bold:Human Sans Bold;
+    --adobe-ernie:AdobeHandwriting-Ernie;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+  
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: var(--theme-color);
+	font-family: var(--human-sans-regular), serif;
+	font-weight: normal;
+	word-wrap: break-word;
+	font-kerning: normal;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt";
+	-ms-font-feature-settings: "kern", "liga", "clig", "calt";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+	font-feature-settings: "kern", "liga", "clig", "calt";
+    position: relative;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+img{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-ms-touch-select: none;
+	-webkit-user-drag: none;
+}
+
+input, select{
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid transparent;
+    width:100%;
+    font-size: 1rem;
+    font-family: var(--human-sans-medium);
+}
+
+input::-webkit-input-placeholder,
+input:-ms-input-placeholder,
+input::placeholder {  
+    color: gray;
+}
+
+
+select:invalid{
+    color: gray;
+}
+
+input:focus{
+    border-color: var(--theme-color);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+
+.container{
+    width:100%;
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width:720px;
+    }
+}
+
+@media (min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width:60%;
+    }
+}
+
+.underline{
+    text-decoration: underline;
+}
+.btn{
+    display: block;
+    background:#000;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 25px 5px;
+    font-size: 1.3rem;
+    color:var(--white);
+    cursor: pointer;
+    font-family: var(--glorify-semibold);
+}
+
+
+.header_div{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 12346;
+    text-align: center;
+    color: var(--white);
+    padding: 3% 10% 0;
+}
+
+.header_div h1{
+    font-size: 2.5rem;
+    font-family: var(--human-sans-bold);
+    letter-spacing: -1px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_div h1 img{
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    display: inline;
+    vertical-align: middle;
+}
+.header_div .btn{
+    position: absolute;
+    right: 0;
+    margin: 0 !important;
+    padding: 8px 25px 5px;
+    background: rgba(var(--theme-rgb), 0.8);
+}
+
+.footer_div{
+    min-height: 85vh;
+    background:var(--theme-color);
+    position: relative;
+    padding: 150px  0 50px;
+}
+
+.footer_div .row{
+    width:90%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_div .form,
+.footer_div .links{
+    flex: 0 0 50%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.footer_div .form_div{
+    padding: 50px 50px;
+    position: relative;
+    color: var(--theme-color);
+}
+
+.footer_div .form_div::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0;
+    background: var(--pink-light);
+    transform: rotate(5deg);
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.footer_div .form_div h1{
+    position: relative;
+    z-index: 1;
+    font-family: var(--glorify-bold);
+    font-size: 3rem;
+}
+
+.footer_div .form_div form{
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    margin: 25px 0 0;
+}
+
+.footer_div .form_div form select{
+    max-width: 50%;
+}
+
+
+.footer_div .form_div form .btn{
+    max-width: max-content;
+    padding: 8px 25px 5px;
+    margin: 50px 0 0;
+}
+
+.footer_div .form_div form .input{
+    margin: 15px 0;
+}
+
+.footer_div .links div:first-child{
+    width: 100%;
+}
+.footer_div .links h1{
+    font-size: 2.5rem;
+    font-family: var(--human-sans-bold);
+    letter-spacing: -1px;
+    width: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+    text-align: left;
+    max-width: max-content;
+    margin: 0;
+}
+
+.footer_div .links h1::after{
+    content: "";
+    height: 5px;
+    width: 100%;
+    max-width: 50%;
+    position: absolute;
+    bottom:0;
+    left:0;
+    background-color: grey;
+}
+
+.footer_div .links a{
+    color: inherit;
+}
+
+
+.footer_div .links a:hover{
+    color:var(--yellow-dark);
+}
+
+.footer_div .links ul{
+    width: 100%;
+    margin:10% 0;
+    list-style: none;
+    text-align: left;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.footer_div .links li{
+    margin: 25px 0;
+    width: 100%;
+    font-size: 1.3rem;
+    box-sizing: border-box;
+}
+
+.footer_div .links li:first-child{
+    margin-top: 0;
+}
+
+
+.footer_div .links .social_media{
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.footer_div .links .social_media a{
+    margin:0 10px;
+    display: inline-flex;
+    margin-bottom: 0;
+    text-decoration: none !important;
+}
+
+.footer_div .links .social_media i{
+    font-size: 2rem;
+}
+
+.footer_div .links .social_media p{
+    display: inline-block;
+    vertical-align: middle;
+    margin:0 0 0 auto;
+}
+@media only screen and (max-width:992px) {
+    
+    .header_div{
+        padding: 5% 10% 0;
+    }
+    .header_div h1{
+        font-size: 2rem;
+    }
+    .header_div h1 img{
+        max-width:40px;
+        max-height: 40px;
+    }
+    .header_div .btn{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .header_div{
+        padding: 5% 1% 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+	html {
+		font-size: 100%;
+	}
+    
+    .header_div{
+        padding: 8% 1% 0;
+    }
+    
+    .header_div h1{
+        font-size: 1.7rem;
+    }
+
+    .header_div .btn{
+        font-size: 1rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .header_div h1{
+        justify-content: flex-start;
+    }
+}
+  

@@ -5,18 +5,3 @@
 @import url('./4_fourth-section.css');
 
 
-@media screen and (max-width:1300px) {
-    .fourth-section .container{
-        min-width: 85%;
-    }
-}
-
-
-
-@media screen and (max-width:600px) {
-    .fourth-section .container{
-        min-width: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-}

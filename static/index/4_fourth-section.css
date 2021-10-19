@@ -8,7 +8,8 @@
 
 .fourth-section .tagline,
 .fourth-section .tag{
-    line-height: 2.5rem;
+    font-size: 3.5rem;
+    line-height: 2.7rem;
 }
 .fourth-section .tagline{
     text-decoration-thickness: 2px;
@@ -29,8 +30,8 @@
 
 .fourth-section .image,
 .fourth-section .text{
-    flex: 0 0 42%;
-    width: 42%;
+    flex: 0 0 45%;
+    width: 45%;
     text-align: center;
     display: flex;
     position: relative;
@@ -65,8 +66,10 @@
 }
 .fourth-section .text{
     padding: 15px;
-    flex: 0 0 45%;
-    width: 45%;
+    flex: 0 0 50%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .fourth-section .description{
@@ -75,6 +78,7 @@
 }
 .fourth-section .description_div{
     margin:10% auto 0 auto;
+    max-width: 60%;
 }
 
 .fourth-section .tag{
@@ -109,6 +113,11 @@
     transform: rotateX(180deg) rotateY(180deg);
 }
 
+.fourth-section .fences._2{
+    top: -25px;
+    transform: rotateX(0) rotateY(180deg);
+}
+
 .stars {
     position: absolute;
     z-index: 5;    
@@ -123,6 +132,13 @@
     bottom: 5%;
     right: 5%;
 }
+
+@media screen and (max-width:1300px) {
+    .fourth-section .container{
+        min-width: 85%;
+    }
+}
+
 
 @media screen and (max-width:992px) {
     .fourth-section .description_div{
@@ -164,6 +180,7 @@
     
 }
 @media screen and (max-width:600px) {
+    
     .fourth-section{
         background-color: var(--orange-dark);
         padding-top: 0;
@@ -176,12 +193,14 @@
     }
     
     
-
     .fourth-section .container{
+        min-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
         position: relative;
         z-index: 5;
     }
-    
+
     .fourth-section .image,
     .fourth-section .text{
         flex: 0 0 100%;
@@ -232,6 +251,11 @@
         width: 120%;
         height: 100px;
         transform: rotateX(0) rotateY(0);
+    }
+
+    
+    .fourth-section .fences._2{
+        display: none;
     }
     
     .stars img{

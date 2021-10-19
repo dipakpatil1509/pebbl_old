@@ -40,7 +40,7 @@
     --white-rgb:255, 255, 255;
     --pink-dark:#d86c93;
     --pink-dark-rgb:216, 108, 147;
-    --pink-light:#eaadc3;
+    --pink-light:#f7b5cd;
     --pink-light-rgb:234, 173, 195;
     --green-dark:#79dba7;
     --green-dark-rgb:121, 219, 167;
@@ -67,14 +67,13 @@
     padding: 0;
 	box-sizing: border-box;
 }
-
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-  
+
 body {
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
@@ -268,7 +267,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer_div .form_div{
-    padding: 80px 50px;
+    padding: 50px 25px;
     position: relative;
     color: var(--theme-color);
     display: flex;
@@ -292,7 +291,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
     right: 0;
     background: var(--pink-light);
-    transform: rotate(2deg);
+    transform: rotate(1deg);
     z-index: 0;
     border-radius: 5px;
 }
@@ -301,24 +300,26 @@ input[type=number]::-webkit-outer-spin-button {
     position: relative;
     z-index: 1;
     font-family: var(--glorify-bold);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .footer_div .form_div form{
     position: relative;
     z-index: 1;
     text-align: left;
-    margin: 25px 0 0;
+    margin: 25px 5% 0;
+    overflow: hidden;
 }
 
 .footer_div .form_div form select{
-    max-width: 50%;
+    max-width: 45%;
+    padding: 15px;
 }
 
 
 .footer_div .form_div form .btn{
     max-width: max-content;
-    padding: 8px 25px 5px;
+    padding: 10px 25px 10px;
     margin: 40px 0 0;
 }
 
@@ -326,6 +327,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 15px 0;
 }
 
+.footer_div .form_div form .input input{
+    box-sizing: border-box;
+    width: 90%;
+    padding: 15px;
+}
 
 .footer_div .links{
     flex:  0 0 30%;
@@ -337,33 +343,28 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .links div:first-child{
     width: 100%;
 }
-.footer_div .links h1{
-    font-size: 2.5rem;
-    font-family: var(--human-sans-bold);
-    letter-spacing: -1px;
-    width: 100%;
+.footer_div .links img{
+    max-width: 150px;
+    max-height: 50px;
+    object-fit: contain;
+    margin-left: 0;
+    display: block;
     position: relative;
-    padding-bottom: 2rem;
-    text-align: left;
-    max-width: max-content;
-    margin: 0;
+    padding-bottom: 25px;
 }
 
-.footer_div .links h1::after{
-    content: "";
+.footer_div .links .hr{
+    display: block;
     height: 5px;
     width: 100%;
-    max-width: 50%;
-    position: absolute;
-    bottom:0;
-    left:0;
+    max-width: 60px;
     background-color: grey;
+    position: relative;
 }
 
 .footer_div .links a{
     color: inherit;
 }
-
 
 .footer_div .links a:hover{
     color:var(--yellow-dark);
@@ -371,7 +372,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer_div .links ul{
     width: 100%;
-    margin:20% 0;
+    margin:20% 0 15%;
     list-style: none;
     text-align: left;
     columns: 2;
@@ -382,7 +383,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .links li{
     margin: 25px 0;
     width: 100%;
-    font-size: 1rem;
+    font-size: 14.5px;
     box-sizing: border-box;
 }
 
@@ -489,6 +490,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 @media only screen and (max-width:600px) {
+    
     .header_div{
         padding: 5% 1% 0;
     }

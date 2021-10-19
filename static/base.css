@@ -117,8 +117,8 @@ input, select{
     outline: none;
     border: 1px solid transparent;
     width:100%;
-    font-size: 1rem;
-    font-family: var(--human-sans-medium);
+    font-size: 0.95rem;
+    font-family: var(--human-sans-regular);
 }
 
 input::-webkit-input-placeholder,
@@ -228,7 +228,7 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     right: 0;
     margin: 0 !important;
-    padding: 8px 25px 5px;
+    padding: 8px 20px 5px;
     font-size: 1rem;
 }
 
@@ -268,12 +268,20 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer_div .form_div{
-    padding: 50px 50px;
+    padding: 80px 50px;
     position: relative;
     color: var(--theme-color);
     display: flex;
     align-items: center;
-    max-width: 450px;
+    max-width: 550px;
+    max-height: 500px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.footer_div .form div{
+    width: 100%;
 }
 
 .footer_div .form_div::before{
@@ -284,7 +292,7 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 0;
     right: 0;
     background: var(--pink-light);
-    transform: rotate(5deg);
+    transform: rotate(2deg);
     z-index: 0;
     border-radius: 5px;
 }
@@ -311,7 +319,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .form_div form .btn{
     max-width: max-content;
     padding: 8px 25px 5px;
-    margin: 50px 0 0;
+    margin: 40px 0 0;
 }
 
 .footer_div .form_div form .input{
@@ -320,8 +328,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 .footer_div .links{
-    flex:  0 0 40%;
-    width: 40%;
+    flex:  0 0 30%;
+    width: 30%;
     margin-left: auto;
     margin-right: 0;
 }
@@ -363,7 +371,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer_div .links ul{
     width: 100%;
-    margin:10% 0;
+    margin:20% 0;
     list-style: none;
     text-align: left;
     columns: 2;
@@ -374,7 +382,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .links li{
     margin: 25px 0;
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1rem;
     box-sizing: border-box;
 }
 
@@ -397,7 +405,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .footer_div .links .social_media i{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer_div .links .social_media p{

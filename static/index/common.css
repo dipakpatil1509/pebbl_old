@@ -11,6 +11,7 @@
 .btn{
     padding: 15px 15px;
     margin: 50px 0 25px;
+    font-size: 1rem;
 }
 
 .description_div{
@@ -27,7 +28,7 @@
 
 .tag, .tagline{
     font-family: var(--glorify-bold);
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 10px;
     letter-spacing: 0px;

@@ -1,7 +1,7 @@
 
 .third-section{
     background-color: var(--green-dark);
-    padding-top: 300px;
+    padding-top: 220px;
     padding-bottom: 100px;
 }
 
@@ -11,14 +11,17 @@
     z-index: 1;
 }
 
+.third-section .tag{
+    word-spacing: -3px;
+}
 .third-section .description_div{
-    margin:10% auto 0 13%;
+    margin:5% auto 0 13%;
 }
 
 
 .third-section .btn{
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .third-section .images img{
@@ -72,7 +75,7 @@
     top: 55%;
     right: 70%;
     max-width: 350px;
-    max-height: 30px;
+    max-height: 20px;
 }
 
 .third-section .horizontal-line-2{

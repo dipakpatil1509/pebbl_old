@@ -15,6 +15,12 @@
     margin:10% auto 0 13%;
 }
 
+
+.third-section .btn{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
 .third-section .images img{
     position: absolute;
     object-fit: contain;
@@ -63,7 +69,7 @@
 }
 
 .third-section .horizontal-line{
-    top: 60%;
+    top: 55%;
     right: 70%;
     max-width: 350px;
     max-height: 30px;

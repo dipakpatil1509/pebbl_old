@@ -1,0 +1,6 @@
+Remove Facebook, Twitter and add mail icon
+Remove Press
+Redirect to careers to mail
+Scroll to misson div
+Scroll to form when click on get access
+

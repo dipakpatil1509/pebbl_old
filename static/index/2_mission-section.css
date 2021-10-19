@@ -2,24 +2,28 @@
 .mission-section{
     background-color: var(--yellow-dark);
     overflow: visible;
+    padding-top: calc(70px + 7%);
 }
-
+.mission-section .tag{
+    letter-spacing: -5px;
+}
 .mission-section .title{
     font-size: 1rem;
     font-family: var(--human-sans-medium);
     text-transform: uppercase;
     margin-bottom: 40px;
+    letter-spacing: 0;
 }
 
 .mission-section .container{
     position: relative;
-    padding-bottom: 150px;
+    padding-bottom: 230px;
     overflow: visible;
     z-index: 1;
 }
 
 .mission-section .description{
-    margin:15% auto 5%;
+    margin:25% auto 25%;
 }
 .mission-section .description_div img{
     max-width: 800px;

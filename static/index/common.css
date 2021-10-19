@@ -28,14 +28,18 @@
 .tag, .tagline{
     font-family: var(--glorify-bold);
     font-size: 4rem;
-    line-height: 3.5rem;
+    line-height: 3rem;
     margin-bottom: 10px;
+    letter-spacing: 0px;
+}
+.tag{
+    letter-spacing: -1px;
 }
 .tagline{
     font-family: var(--adobe-ernie);
-    text-transform: uppercase;
     font-weight: 300;
     margin-bottom: 0;
+    margin-top: 5px;
 }
 
 @media screen and (max-width:600px){

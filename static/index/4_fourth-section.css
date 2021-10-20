@@ -49,7 +49,6 @@
 }
 
 .fourth-section .image img.heart{
-    content: "";
     z-index: 1;
     position: absolute;
     top: 45%;

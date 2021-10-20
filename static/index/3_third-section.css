@@ -11,8 +11,10 @@
     z-index: 1;
 }
 
-.third-section .tag{
+.third-section .tag,
+.third-section .tagline{
     word-spacing: -3px;
+    line-height: 2.5rem;
 }
 .third-section .description_div{
     margin:5% auto 0 13%;
@@ -131,6 +133,11 @@
     .third-section{
         background-color: var(--green-dark);
         padding: 150px 15px 100px;
+    }
+
+    .third-section .tag,
+    .third-section .tagline{
+        line-height: 2.5rem;
     }
 
     .third-section .description_div{

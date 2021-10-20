@@ -49,11 +49,19 @@
 
 @media screen and (max-width:600px){
     .landing-section{
-        background-position-x: 60%;
+        background-position-x: 50%;
         padding-top:calc(70px + 15%);
+        background-size: cover;
+        min-height: 100vh;
     }
     
     .landing-section h1{
         font-size: 3rem;
+        line-height: 2.5rem;
+    }
+    
+
+    .landing-section h1.bottom-text{
+        bottom: 10vh;
     }
 }

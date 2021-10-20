@@ -598,6 +598,23 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen and (max-width: 380px) {
     .header_div h1{
         justify-content: flex-start;
+        padding: 0 10px;
     }
+    
+    .footer_div .form_div h1{
+        font-size: 1.8rem;
+        word-spacing: -5px;
+    }
+    
+}
+  
+
+
+@media only screen and (max-width: 350px) {
+    .footer_div .form_div h1{
+        font-size: 1.6rem;
+        word-spacing: -2px;
+    }
+    
 }
   

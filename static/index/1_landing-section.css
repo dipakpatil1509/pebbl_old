@@ -10,7 +10,6 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-origin: border-box;
-    background-attachment: fixed;
     color: var(--white);
     text-align: center;
     padding-top:calc(70px + 8%);
@@ -35,13 +34,6 @@
     margin-top: 1%;
     display: block;
 }
-
-/* 
-@media (max-width: iphone-screen) {
-    .landing-section{
-        background-attachment: scroll;
-    }
-} */
 
 
 @media screen and (max-width:1200px){

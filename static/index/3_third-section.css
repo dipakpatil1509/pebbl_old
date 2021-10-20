@@ -9,12 +9,17 @@
     text-align: right;
     position: relative;
     z-index: 1;
+    padding-right: 5%;
 }
 
 .third-section .tag,
 .third-section .tagline{
     word-spacing: -3px;
     line-height: 2.5rem;
+}
+
+.third-section .tag{
+    margin-right: -15px;
 }
 .third-section .description_div{
     margin:5% auto 0 13%;
@@ -74,17 +79,17 @@
 }
 
 .third-section .horizontal-line{
-    top: 55%;
+    top: 45%;
     right: 70%;
     max-width: 350px;
     max-height: 20px;
 }
 
 .third-section .horizontal-line-2{
-    top: 90%;
+    top: 87%;
     right: 30%;
     max-width: 350px;
-    max-height: 30px;
+    max-height: 20px;
 }
 
 

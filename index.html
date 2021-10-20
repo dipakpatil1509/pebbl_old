@@ -81,14 +81,10 @@
                 
                 <div class="container">
                     <h1 class="tag">
-                        A SEA<br>WORTH<br>EXPLORING,
+                        NO BS.
                     </h1>
                     <h1 class="tagline">
-                        NOT JUST
-                        <br>
-                        FOR 
-                        <br>
-                        FiSHiNG.
+                        ONLY <br> BFFs.
                     </h1>
                     <div class="description_div">
                         <p class="description">
@@ -178,7 +174,7 @@
                 chosenDiv.innerHTML = "";
                 var text = "";
                 var i; 
-                var position = [[15, 5],[45, 10],[10, 40],[98, 50],[75, 90],[40, 95],[10, 90], [90, 80], [15, 95], [90, 30]]
+                var position = [[15, 5],[45, 10],[10, 40],[55, 90], [90, 30]]
                 for (i = 0; i < numberOfStars; i++) {
                     var top = position.length -1 < i ? randomFrom() : position[i][0]; 
                     var right = position.length -1< i ? randomFrom() : position[i][1]; 
@@ -190,7 +186,7 @@
             }
 
             // Function(How many stars, id that you want populating)
-            Stars(10, "fourth");
+            Stars(5, "fourth");
 
         })();
 

@@ -34,7 +34,7 @@
 }
 
 :root{
-    --theme-color:#1b242a;
+    --theme-color:#000;
     --theme-rgb:27, 36, 42;
     --white:#ffffff;
     --white-rgb:255, 255, 255;
@@ -244,7 +244,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .footer_div{
     min-height: 85vh;
-    background:var(--theme-color);
+    background:#1b242a;
     position: relative;
     padding: 150px  0 50px;
 }
@@ -357,7 +357,7 @@ input[type=number]::-webkit-outer-spin-button {
 .footer_div .form_div form .btn{
     max-width: max-content;
     padding: 10px 30px 10px;
-    margin: 40px 0 0;
+    margin: 50px 0 0;
     font-size: 1.1rem;
 }
 
@@ -443,14 +443,19 @@ input[type=number]::-webkit-outer-spin-button {
     text-decoration: none !important;
 }
 
+.footer_div .links .social_media a:first-child{
+    margin-left: 0;
+}
+
 .footer_div .links .social_media i{
     font-size: 1.5rem;
 }
 
 .footer_div .links .social_media p{
     display: inline-block;
-    vertical-align: middle;
-    margin:0 0 0 auto;
+    vertical-align:  bottom;
+    margin:12px 0 0 auto;
+    font-size: 0.9rem;
 }
 
 

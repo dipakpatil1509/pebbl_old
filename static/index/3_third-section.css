@@ -22,7 +22,8 @@
     margin-right: -15px;
 }
 .third-section .description_div{
-    margin:5% auto 0 13%;
+    margin:10% auto 0 13%;
+    position: relative;
 }
 
 
@@ -79,15 +80,21 @@
 }
 
 .third-section .horizontal-line{
-    top: 45%;
-    right: 70%;
+    position: absolute;
+    object-fit: contain;
+    z-index: 0;
+    top: -30%;
+    right: 100%;
     max-width: 350px;
     max-height: 20px;
 }
 
 .third-section .horizontal-line-2{
-    top: 87%;
-    right: 30%;
+    position: absolute;
+    object-fit: contain;
+    z-index: 0;
+    top: 120%;
+    left: 100%;
     max-width: 350px;
     max-height: 20px;
 }
@@ -122,12 +129,10 @@
 @media screen and (max-width:800px) {
     
     .third-section .horizontal-line{
-        right: 80%;
         max-height: 10px;
     }
 
     .third-section .horizontal-line-2{
-        top: 80%;
         max-height: 10px;
     }
 }
@@ -179,15 +184,14 @@
     }
 
     .third-section .horizontal-line{
-        top: 52%;
-        right: 0;
+        right: auto;
+        left: 75%;
         max-height: 10px;
     }
 
     .third-section .horizontal-line-2{
-        top: calc(52% + 330px);
         right: auto;
-        left: 0;
+        left: -25%;
         max-height: 10px;
     }
 }

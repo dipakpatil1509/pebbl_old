@@ -107,17 +107,16 @@
 .fourth-section .fences{
     position: absolute;
     top: -30px;
-    left: -10%;
-    width: 70%;
+    left: 0;
+    width: 100vw;
     height: 120px;
     object-fit: fill;
-    transform: rotateX(180deg) rotateY(180deg);
 }
 
 .fourth-section .fences._2{
-    left: 40%;
+    top:-20px;
     height: 120px;
-    transform: rotateX(180deg) rotateY(0deg);
+    transform: rotateY(180deg);
 }
 
 .stars {

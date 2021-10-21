@@ -1,9 +1,9 @@
 .fourth-section{
     background-color: var(--orange-dark);
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 100px;
     overflow: visible;
-    padding-top: calc(70px + 3%);
+    /* padding-top: calc(70px + 3%); */
 }
 
 .fourth-section .tagline,
@@ -30,8 +30,8 @@
 
 .fourth-section .image,
 .fourth-section .text{
-    flex: 0 0 50%;
-    width: 50%;
+    flex: 0 0 45%;
+    width: 45%;
     text-align: center;
     display: flex;
     position: relative;
@@ -40,7 +40,7 @@
 
 .fourth-section .image img{
     width: 100%;
-    min-height: 95vh;
+    min-height: 85vh;
     object-fit: cover;
     object-position: center;
     border-radius: 30px;

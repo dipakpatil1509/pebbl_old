@@ -50,7 +50,7 @@
     z-index: 1333;
 }
 
-.mission-section .images .star-like{
+/* .mission-section .images .star-like{
     position: absolute;
     width:100%;
     height: 100%;
@@ -61,7 +61,7 @@
     left:10%;
     right: auto;
     z-index: 1333;
-}
+} */
 
 .mission-section .images .background-design-right,
 .mission-section .images .background-design-left{

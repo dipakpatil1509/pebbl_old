@@ -179,7 +179,7 @@
                 chosenDiv.innerHTML = "";
                 var text = "";
                 var i; 
-                var position = [[15, 5],[45, 10],[10, 40],[55, 90], [90, 30]]
+                var position = [[15, 5],[45, 10],[10, 40],[30, 90], [90, 20], [70, 85], [95, 95]]
                 for (i = 0; i < numberOfStars; i++) {
                     var top = position.length -1 < i ? randomFrom() : position[i][0]; 
                     var right = position.length -1< i ? randomFrom() : position[i][1]; 
@@ -191,7 +191,7 @@
             }
 
             // Function(How many stars, id that you want populating)
-            Stars(5, "fourth");
+            Stars(7, "fourth");
 
         })();
 

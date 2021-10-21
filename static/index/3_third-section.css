@@ -199,8 +199,11 @@
 
     .third-section .other-plant{
         bottom: -10px;
-        right:5%;
-        max-height: 200px;
+        right:0;
+    }
+    .third-section .other-plant img._1{
+        max-height: 250px;
+        max-width: 250px;
     }
     .third-section .planet{
         top: 10%;
